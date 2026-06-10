@@ -1,57 +1,48 @@
 # EX 11 C Program to convert a given decimal value to binary using function without arguments with return type.
 ## DATE:
-## AIM:
+## Aim:
 To write a C Program to convert a given decimal value to binary using function without arguments with return type.
 
-## Algorithm
-
-1.Start the program.
-
-2.Create a function with no arguments that reads a decimal number from the user.
-
-3.Inside the function, convert the number to binary using a loop and store the binary digits.
-
-4.Return 0 from the function after displaying the binary equivalent.
-
-5.Call the function from main() and end the program.
+## Algorithm:
+1. Start. 
+2. Declare a integer variable 
+3. Define a function named dectobin. 
+4. Return the integer. 
+5. Read the value using scanf. 
+6. Convert decimal to binary value. 
+7. Print the dectobin 
+8. End.  
 
 ## Program:
 ```
-#include <stdio.h>
-
-int convertToBinary() {
-    int num, binary[32], i = 0;
-    scanf("%d", &num);
-
-    if(num == 0) {
-        printf("Binary: 0\n");
-        return 0;
-    }
-
-    while(num > 0) {
-        binary[i++] = num % 2;
-        num /= 2;
-    }
-
-    printf("Binary: ");
-    for(int j = i - 1; j >= 0; j--) {
-        printf("%d", binary[j]);
-    }
-    printf("\n");
-
-    return 0;
+#include<stdio.h> 
+Int dectobin(int d)
+{ 
+int bin =0,base=1,rem; 
+  while(d>0) 
+  { 
+    rem=d%2; 
+    bin=bin+rem*base; 
+    d=d/2; 
+    base=base*10; 
+  } 
+printf(" = %d in binary",bin); 
+return 0; 
+} 
+int main() 
+{ 
+int dec; 
+scanf("%d",&dec); 
+printf("%d in decimal",dec); 
+dectobin(dec); 
+return 0; 
 }
-
-int main() {
-    convertToBinary();
-    return 0;
-}
+Developed by:Venkatasubramaniam R
+RegisterNumber:212222060288
 ```
 
 ## Output:
-
-<img width="381" height="165" alt="image" src="https://github.com/user-attachments/assets/0120ee41-935b-490c-8123-ea84ecf4e2e6" />
-
+![Screenshot 2025-05-06 195511](https://github.com/user-attachments/assets/08cbc1a3-6bed-43e3-be77-bba548a7257d)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
