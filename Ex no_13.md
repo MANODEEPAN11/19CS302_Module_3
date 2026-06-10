@@ -1,48 +1,37 @@
 # EX 13 To write a C program to read the elements and print only the odd elements in the 2D array.
 ## DATE:
-## AIM:
+## Aim:
 To write a C program to read the elements and print only the odd elements in the 2D array.
 
-## Algorithm
-1.Start the program and declare a 2D array with rows and columns.
+## Algorithm:
+1. Start. 
+2. Define a variables i,j,n,a. 
+3. Write program to find n x n matrix. 
+4. Read the value using scanf. 
+5. Ask the user to make an input 
+6. Print out the answer. 
+7. End.  
 
-2.Read the number of rows and columns from the user.
-
-3.Input all elements of the 2D array using nested loops.
-
-4.Traverse the array and check if an element is odd using modulus operator.
-
-5.Print only the odd elements.
 ## Program:
 ```
-/*
-Program to read the elements and print only the odd elements in the 2D array.
-*/
 #include <stdio.h>
 
 int main()
 {
-    int arr[10][10], rows, cols, i, j;
-
-    printf("Enter number of rows: ");
-    scanf("%d", &rows);
-
-    printf("Enter number of columns: ");
-    scanf("%d", &cols);
-
-    printf("Enter elements of the array:\n");
-    for(i = 0; i < rows; i++)
-    {
-        for(j = 0; j < cols; j++)
-        {
+    int n;
+    int i, j;
+    scanf("%d", &n);
+    int arr[n][n]; 
+    for(i = 0; i < n; i++)
+{
+        for(j = 0; j < n; j++)
+       {
             scanf("%d", &arr[i][j]);
         }
     }
-
-    printf("Odd elements in the array are:\n");
-    for(i = 0; i < rows; i++)
-    {
-        for(j = 0; j < cols; j++)
+    for(i = 0; i < n; i++)
+  {
+        for(j = 0; j < n; j++)
         {
             if(arr[i][j] % 2 != 0)
             {
@@ -50,17 +39,14 @@ int main()
             }
         }
     }
-
     printf("\n");
     return 0;
 }
-
-
+Developed by:Venkatasubramaniam R
+RegisterNumber:212222060288
 ```
-
 ## Output:
-
-<img width="372" height="360" alt="image" src="https://github.com/user-attachments/assets/b9c9ab4c-4cb2-4232-a1cc-2ec87afcb02d" />
+![Screenshot_6-5-2025_20104_training saveetha in](https://github.com/user-attachments/assets/e795d09e-a6f2-4897-ab9a-2a213294ed03)
 
 
 ## Result:
